@@ -16,6 +16,8 @@ Será feita a conta retornando o valor da gorgeta por pessoa e também o valor t
 
 Há um botão de reset para limpar todos os campos.
 
+## Screenshots
+
 ## Conhecimentos aplicados
 
 - HTML
