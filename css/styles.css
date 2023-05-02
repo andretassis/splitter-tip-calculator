@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    --font: 'Space Mono', monospace;
+    --font-weight: 700;
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--light-grayish-cyan);
+    font-family: var(--font);
+    color: var(--dark-grayish-cyan);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.container {
+    margin-top: 3em;
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 20px 20px 0 0;
+    width: 100%
+}
+
+.data {
+    padding: 10px 0 0 15px;
+}
+
+input {
+    display: block;
+    margin-top: 0.2em;
+}
+
+.bill-input,
+.people-input {
+    width: 95%;
+    height: 30px;
+    font-size: 24px;
+    font-family: var(--font);
+    background-color: var(--very-light-grayish-cyan);
+    border: var(--very-light-grayish-cyan);
+    color: var(--very-dark-cyan);
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: right;
+}
+
+
+.people-input {
+    background-image: url(../images/icon-person.svg);
+}
+
+.tip-percentage {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 1em 0 1em 0;
+    align-items: center;
+}
+
+.button-tip,
+.button-custom {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-grayish-cyan);
+    border: transparent;
+    border-radius: 2px;
+    font-family: var(--font);
+    font-size: 18px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.button-custom {
+    background-color: var(--very-light-grayish-cyan);
+    border: transparent;
+    color: var(--dark-grayish-cyan);
+}
+
+.button-tip:active {
+    background-color: var(--strong-cyan);
+}
+
+.result {
+    margin-top: 1em;
+    border: 2px solid var(--very-dark-cyan);
+    border-radius: 10px;
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-grayish-cyan);
+}
+
+.result-tip-person,
+.result-total-person {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 25px 0;
+}
+
+.button-reset {
+    width: 70%;
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    border: transparent;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--very-dark-cyan);
+}
+
+a:visited {
+    color: var(--very-dark-cyan);
+}
