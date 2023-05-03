@@ -19,26 +19,26 @@
             <div class="data">
                 <section class="bill"></section>
                 <label>Valor total da conta</label>
-                <input class="bill-input" type="number">
+                <input class="bill-input" type="number" id="bill">
                 <section class="tip-percentage">
                     <p class="tip-text">Selecione o %</p>
                     <div>
-                        <button class="button-tip" id="button-tip">5%</button>
-                        <button class="button-tip" id="button-tip">10%</button>
+                        <button class="button-tip" id="button-tip-5" value="5">5%</button>
+                        <button class=" button-tip" id="button-tip-10">10%</button>
                     </div>
                     <div>
-                        <button class="button-tip" id="button-tip">15%</button>
-                        <button class="button-tip" id="button-tip">25%</button>
+                        <button class="button-tip" id="button-tip-15">15%</button>
+                        <button class="button-tip" id="button-tip-25">25%</button>
                     </div>
                     <div>
-                        <button class="button-tip" id="button-tip">50%</button>
+                        <button class="button-tip" id="button-tip-50">50%</button>
                         <button class="button-custom" id="button-custom">Outro</button>
                     </div>
                 </section>
 
                 <section class="number-people">
                     <label>Número de pessoas</label>
-                    <input class="people-input" type="number">
+                    <input class="people-input" type="number" id="people">
                 </section>
             </div>
             <div class="result">
@@ -47,20 +47,21 @@
                     <div class="tip-person">
                         <p class="tip-person-text">Valor da gorgeta /pessoa</p>
                     </div>
-                    <p class="tip-person-value">5</p>
+                    <p class="tip-person-value" id="tip-person">R$ 0</p>
                 </div>
 
                 <div class="result-total-person">
                     <p class="total-person-text">Valor total /pessoa</p>
-                    <p class="total-person-text">30</p>
+                    <p class="total-person-value" id="total-person">R$ 0</p>
                 </div>
                 <div class="button-container">
                     <button class="button-reset" id="button-reset">Limpar</button>
                 </div>
 
             </div>
+        </div>
 
-            <script></script>
+        <script src="./js/test.js"></script>
     </main>
     <footer>
         <p>Desafio <a href="https://www.frontendmentor.io/challenges">Frontend Mentor</a>.

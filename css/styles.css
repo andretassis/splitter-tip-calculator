@@ -75,10 +75,11 @@ input {
     background-color: var(--very-dark-cyan);
     color: var(--very-light-grayish-cyan);
     border: transparent;
-    border-radius: 2px;
+    border-radius: 5px;
     font-family: var(--font);
     font-size: 18px;
     width: 120px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -88,7 +89,7 @@ input {
     color: var(--dark-grayish-cyan);
 }
 
-.button-tip:active {
+.button-tip2 {
     background-color: var(--strong-cyan);
 }
 
@@ -98,6 +99,12 @@ input {
     border-radius: 10px;
     background-color: var(--very-dark-cyan);
     color: var(--very-light-grayish-cyan);
+}
+
+.tip-person-value,
+.total-person-value {
+    color: var(--strong-cyan);
+    font-size: 30px;
 }
 
 .result-tip-person,
@@ -116,6 +123,7 @@ input {
 
 .button-reset {
     width: 70%;
+    height: 55px;
     background-color: var(--strong-cyan);
     color: var(--very-dark-cyan);
     border: transparent;
@@ -136,4 +144,43 @@ a {
 
 a:visited {
     color: var(--very-dark-cyan);
+}
+
+@media (min-width: 1150px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 55%;
+        border-radius: 20px;
+        padding: 15px 0;
+        box-shadow: -5px 5px 5px var(--dark-grayish-cyan);
+    }
+
+    .button-tip,
+    .button-custom {
+        height: 50px;
+    }
+
+    .result {
+        width: 50%;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 140px;
+    }
+
+    .tip-person-value,
+    .total-person-value {
+        color: var(--strong-cyan);
+        font-size: 40px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
 }
