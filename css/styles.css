@@ -10,6 +10,7 @@
     --light-grayish-cyan: hsl(185, 41%, 84%);
     --very-light-grayish-cyan: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
+    --error: #DB5A5A;
 }
 
 body {
@@ -40,6 +41,11 @@ main {
 input {
     display: block;
     margin-top: 0.2em;
+}
+
+.bill-input.error,
+.people-input.error {
+    border: 2px solid var(--error);
 }
 
 .bill-input,
@@ -89,7 +95,7 @@ input {
     color: var(--dark-grayish-cyan);
 }
 
-.button-tip2 {
+.button-tip-active {
     background-color: var(--strong-cyan);
 }
 
@@ -112,6 +118,11 @@ input {
     display: flex;
     justify-content: space-between;
     padding: 12px;
+}
+
+span {
+    color: var(--dark-grayish-cyan);
+    font-size: 15px;
 }
 
 .button-container {

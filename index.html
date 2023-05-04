@@ -15,53 +15,62 @@
 <body>
     <main>
         <img src="./images/logo.svg" alt="Logo Splitter" class="logo">
+
         <div class="container">
+
             <div class="data">
-                <section class="bill"></section>
-                <label>Valor total da conta</label>
-                <input class="bill-input" type="number" id="bill">
-                <section class="tip-percentage">
-                    <p class="tip-text">Selecione o %</p>
-                    <div>
-                        <button class="button-tip" id="button-tip-5" value="5">5%</button>
-                        <button class=" button-tip" id="button-tip-10">10%</button>
-                    </div>
-                    <div>
-                        <button class="button-tip" id="button-tip-15">15%</button>
-                        <button class="button-tip" id="button-tip-25">25%</button>
-                    </div>
-                    <div>
-                        <button class="button-tip" id="button-tip-50">50%</button>
-                        <button class="button-custom" id="button-custom">Outro</button>
-                    </div>
+
+                <section class="bill">
+                    <label>Valor total da conta</label>
+                    <input class="bill-input" type="number" id="bill" required>
                 </section>
 
                 <section class="number-people">
                     <label>Número de pessoas</label>
-                    <input class="people-input" type="number" id="people">
+                    <input class="people-input" type="number" id="people" required>
+                </section>
+
+                <section class="tip-percentage">
+                    <p class="tip-text">Selecione o %</p>
+                    <div>
+                        <button class="button-tip" id="button-tip-5" data-button="btn">5%</button>
+                        <button class=" button-tip" id="button-tip-10" data-button="btn">10%</button>
+                    </div>
+                    <div>
+                        <button class="button-tip" id="button-tip-15" data-button="btn">15%</button>
+                        <button class="button-tip" id="button-tip-25" data-button="btn">25%</button>
+                    </div>
+                    <div>
+                        <button class="button-tip" id="button-tip-50" data-button="btn">50%</button>
+                        <button class="button-custom" id="button-custom">Outro</button>
+                    </div>
                 </section>
             </div>
+
             <div class="result">
 
                 <div class="result-tip-person">
                     <div class="tip-person">
-                        <p class="tip-person-text">Valor da gorgeta /pessoa</p>
+                        <p class="tip-person-text">Valor da gorjeta <span>/pessoa</span></p>
                     </div>
                     <p class="tip-person-value" id="tip-person">R$ 0</p>
                 </div>
 
                 <div class="result-total-person">
-                    <p class="total-person-text">Valor total /pessoa</p>
+                    <p class="total-person-text">Valor total <span>/pessoa</span></p>
                     <p class="total-person-value" id="total-person">R$ 0</p>
                 </div>
                 <div class="button-container">
-                    <button class="button-reset" id="button-reset">Limpar</button>
+                    <button type="reset" class="button-reset" id="button-reset">Limpar</button>
                 </div>
 
             </div>
+
         </div>
 
-        <script src="./js/test.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/icon.js"></script>
+        <script src="./js/reset.js"></script>
     </main>
     <footer>
         <p>Desafio <a href="https://www.frontendmentor.io/challenges">Frontend Mentor</a>.
