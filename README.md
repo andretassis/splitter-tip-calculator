@@ -22,5 +22,5 @@ Há um botão de reset para limpar todos os campos.
 
 - HTML
 - CSS
-- CSS: Flexbox
+- Bootstrap
 - Javascript
