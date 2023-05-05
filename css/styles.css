@@ -27,24 +27,24 @@ main {
 }
 
 .container {
-    margin-top: 3em;
+    margin-top: 1em;
     background-color: var(--white);
     border: 2px solid var(--white);
     border-radius: 20px 20px 0 0;
     width: 100%
 }
 
+.accordion {
+    margin-top: 2em;
+}
+
 .data {
     padding: 10px 0 0 15px;
 }
 
-input {
-    display: block;
-    margin-top: 0.2em;
-}
-
 .bill-input.error,
-.people-input.error {
+.people-input.error,
+.input-custom.error {
     border: 2px solid var(--error);
 }
 
@@ -54,13 +54,15 @@ input {
     height: 30px;
     font-size: 24px;
     font-family: var(--font);
-    background-color: var(--very-light-grayish-cyan);
+    background-color: var(--light-grayish-cyan);
     border: var(--very-light-grayish-cyan);
     color: var(--very-dark-cyan);
     background-image: url(../images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position: left;
     text-align: right;
+    display: block;
+    margin-top: 0.2em;
 }
 
 
@@ -74,6 +76,7 @@ input {
     gap: 0.5em;
     margin: 1em 0 1em 0;
     align-items: center;
+    width: 100%;
 }
 
 .button-tip,
@@ -90,9 +93,25 @@ input {
 }
 
 .button-custom {
-    background-color: var(--very-light-grayish-cyan);
-    border: transparent;
+    background-color: var(--light-grayish-cyan);
     color: var(--dark-grayish-cyan);
+}
+
+.display-none {
+    display: none;
+}
+
+.input-custom {
+    background-color: var(--light-grayish-cyan);
+    color: var(--dark-grayish-cyan);
+    border: transparent;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    text-align: right;
 }
 
 .button-tip-active {
@@ -144,6 +163,14 @@ span {
     text-transform: uppercase;
 }
 
+.button-reset:active {
+    background-color: var(--light-grayish-cyan);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 footer {
     text-align: center;
 }
@@ -167,6 +194,10 @@ a:visited {
         border-radius: 20px;
         padding: 15px 0;
         box-shadow: -5px 5px 5px var(--dark-grayish-cyan);
+    }
+
+    .accordion {
+        box-shadow: -2px 2px 2px var(--dark-grayish-cyan);
     }
 
     .button-tip,

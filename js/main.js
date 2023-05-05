@@ -53,6 +53,7 @@ function calculatePercentage(event) {
     document.getElementById('total-person').innerHTML = totalPerson.toFixed(2)
 }
 
+// validacao do if
 function errorValidation() {
     conta.classList.add('error')
     people.classList.add('error')
