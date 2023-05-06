@@ -1,0 +1,44 @@
+.dark-body {
+    background-color: #1f1b24;
+    transition: 0.4s;
+}
+
+.bi {
+    font-size: 1.3em;
+}
+
+.bi-moon {
+    display: none;
+}
+
+.bi-moon.show {
+    display: block;
+}
+
+.bi-sun.hide {
+    display: none;
+}
+
+.container.dark,
+.accordion-body.dark {
+    background-color: #262238;
+    border: 2px solid #262238;
+    box-shadow: -5px 5px 5px #262238;
+}
+
+.accordion-button.dark {
+    background-color: #97c1c2e0;
+}
+
+.bill-input.dark,
+.people-input.dark,
+.button-custom.dark,
+.input-custom.dark {
+    background-color: #6f9d9ee0;
+}
+
+.accordion-body.dark,
+.button-custom.dark,
+footer.dark {
+    color: #afe8e9e0;
+}

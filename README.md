@@ -3,6 +3,10 @@
 Projeto responsivo mobile e desktop para uma calculadora de gorjetas. 
 O desafio foi retirado do Front-End Mentor e pode ser acessado em: https://www.frontendmentor.io/challenges
 
+O objetivo não foi recriar o projeto exatamente como estava no Front-End Mentor, mas sim utilizá-lo como base.
+Dessa forma, mantive os mesmos elementos visuais (cores e fontes).
+Entretanto, inseri funcionalidades que não existiam no original, como Dark Mode e menu de intruções em Bootstrap.
+ 
 ## Visão Geral
 
 O projeto possui layout responsivo de acordo com a resolução da tela para mobile e desktop, e foi desenvolvido seguindo a metodologia mobile first.
@@ -16,7 +20,14 @@ Será feita a conta retornando o valor da gorjeta por pessoa e também o valor t
 
 Há um botão de reset para limpar todos os campos.
 
-## Screenshots
+Clicando no ícone de sol ou lua, é possível alternar entre light mode e dark mode.
+
+#### Validações
+
+O sistema não funcionará se:
+ 
+ - Os campos "Valor total da conta" ou "Número de pessoas" forem zero ou negativos;
+ - O campo "Outro" for preenchido com valor 0 ou negativo.
 
 ## Conhecimentos aplicados
 

@@ -1,3 +1,5 @@
+@import url("darkmode.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
 :root {
@@ -11,6 +13,14 @@
     --very-light-grayish-cyan: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
     --error: #DB5A5A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    display: none;
 }
 
 body {
@@ -27,7 +37,7 @@ main {
 }
 
 .container {
-    margin-top: 1em;
+    margin-top: 0.5em;
     background-color: var(--white);
     border: 2px solid var(--white);
     border-radius: 20px 20px 0 0;
@@ -36,6 +46,11 @@ main {
 
 .accordion {
     margin-top: 2em;
+}
+
+.input-change {
+    width: 50%;
+    margin-top: 1em;
 }
 
 .data {
@@ -63,6 +78,7 @@ main {
     text-align: right;
     display: block;
     margin-top: 0.2em;
+    cursor: pointer;
 }
 
 
@@ -103,7 +119,7 @@ main {
 
 .input-custom {
     background-color: var(--light-grayish-cyan);
-    color: var(--dark-grayish-cyan);
+    color: var(--very-dark-cyan);
     border: transparent;
     border-radius: 5px;
     font-family: var(--font);
