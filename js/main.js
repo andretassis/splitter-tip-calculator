@@ -23,6 +23,10 @@ function calculatePercentage(event) {
         return errorValidation()
     }
 
+    conta.classList.remove('error')
+    people.classList.remove('error')
+    outroInput.classList.remove('error')
+
     switch (event.target.id) {
         case 'button-tip-5':
             percentage = 0.05

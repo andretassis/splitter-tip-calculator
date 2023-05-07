@@ -22,7 +22,7 @@ Há um botão de reset para limpar todos os campos.
 
 Clicando no ícone de sol ou lua, é possível alternar entre light mode e dark mode.
 
-#### Validações
+### Validações
 
 O sistema não funcionará se:
  
